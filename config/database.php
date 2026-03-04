@@ -107,7 +107,7 @@ return [
             'password' => env('DB_PASSWORD'),
             'charset' => 'utf8',
             'prefix' => '',
-            'prefix_indexes' => true,q
+            'prefix_indexes' => true,
         ],
 
     ],
