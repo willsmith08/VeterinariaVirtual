@@ -1,0 +1,501 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: relative;
+    background-color: #088199;
+    height: 150px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo_pagina{
+    width: 130px;
+}
+header p{
+    font-family: sans-serif, bold;
+    font-size: 20px;
+    position: absolute;
+    right: 3.5%;
+    top: 1%;
+}
+.redes_sociales{
+    position: absolute;
+    right: 7%;
+    display: flex;
+}
+.socia{
+    margin: 0 3%;
+    cursor: pointer;
+}
+.social{
+    height: 35px;    
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.opcs_pantallas{
+    display: flex;
+    align-items: center;
+    background-color: #75A933;
+    width: 60%;
+    height: 90px;
+    align-content: center;
+    position: absolute;
+    right: 0%;
+    top: 74%;
+    border-radius: 1.5vw 0 0 1.5vw;
+    padding: 0 40px;
+    justify-content: space-between;
+}
+.opc_pantalla, .opc_pantalla1{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    transition: 0.5s;
+}
+.opc_pantalla2{
+    height: 40px;
+    cursor: pointer;
+}
+.cerrar-menu, .abrir-menu{
+    font-size: 70px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.opc_pantalla:hover, .abrir-menu:hover, .cerrar-menu:hover
+{
+    color: #dcdcdc;
+}
+#check, .menu{
+    display: none;
+}
+.container_debajo_header{
+    display: none;
+}
+.phone-contac{
+    display: none;
+}
+.arriba-header{
+    display: none;
+}
+
+#------------------------------------------------------
+
+footer{
+    min-height: 400px;
+    background-color: #011820;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.qr{
+    margin-top: 5px;
+}
+.contenido{
+    width: 450px;
+    height: 350px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    border-right: 3px solid #fff ;
+    border-left: 3px solid #fff ;
+}
+.ini-regis{
+    width: 250px;
+    height: 150px;
+    background: #eeee;
+    z-index: 1000;
+    position: absolute;
+    right: 1%;
+    top: 205px;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 1.5px 1.5px 5px #767676;
+    position: fixed;
+    display: none;
+}
+.ini-regis a:nth-child(1){
+    background: #0A988F;
+    padding: 13px 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 22px;
+}
+.ini-regis p{
+    color: #000000da;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 43px;
+    right: 40px;
+}
+.regi{
+    background: #fff;
+    padding: 10px 50px;
+    border: 3px solid #0A988F;
+    color: #0A988F;
+    font-size: 18px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+#checked-user, #checked-noti{
+    display: none;
+}
+#checked-user:checked ~ .ini-regis{
+    display: block;
+}
+#checked-noti:checked ~ .notificaciones{
+    position: absolute;
+    right: 0%;
+    top: 90px;
+    display: block;
+}
+.notificaciones{
+    width: 300px;
+    height: 250px;
+    background: #fff;
+    position: fixed;
+    z-index: 10000;
+    border-radius: 10px;
+    box-shadow: 1.5px 1.5px 5px #767676;
+    text-align: center;
+    display: none;
+}
+.notificaciones header{
+    background: #C8C8C8;
+    height: 100px;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-shadow: 1.5px 1.5px 5px #767676;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.iniciar_sesion2, .opcs-tel{
+    display: none;
+}
+@media (max-width: 1085px) {
+    .opc_pantalla{
+        font-size: 17px;
+    }
+}
+@media (max-width: 1209px) {
+    .opcs_pantallas{
+        height: 80px;
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ini-regi{
+        width: 250px;
+        height: 150px;
+        background: #eeee;
+        z-index: 1000;
+        position: absolute;
+        right: 1%;
+        top: 205px;
+        border-radius: 10px;
+        text-align: center;
+        align-content: center;
+        box-shadow: 1.5px 1.5px 5px #767676;
+        position: fixed;
+        display: none;
+    }
+    .ini-regi a:nth-child(1){
+        background: #0A988F;
+        padding: 13px 50px;
+        border-radius: 10px;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 18px;
+        position: absolute;
+        top: 10px;
+        right: 22px;
+    }
+    .ini-regi p{
+        color: #000000da;
+        margin-top: 30px;
+        font-family: sans-serif;
+        font-size: 14px;
+        position: absolute;
+        top: 43px;
+        right: 40px;
+    }
+    #user2{
+        display: none;
+    }
+    .user2 img{
+        cursor: pointer;
+    }
+    #user2:checked ~ .ini-regi{
+        display: block;
+    }
+    .notificacion header{
+        background: #C8C8C8;
+        height: 100px;
+        color: #000;
+        font-family: sans-serif;
+        font-size: 20px;
+        box-shadow: 1.5px 1.5px 5px #767676;
+    }
+    #noti2{
+        display: none;
+    }
+    .noti2 img{
+        cursor: pointer;
+    }
+    .notificacion{
+        position: absolute;
+        right: 0%;
+        top: 203px;
+        width: 300px;
+        height: 250px;
+        background: #fff;
+        position: fixed;
+        z-index: 10000;
+        border-radius: 10px;
+        box-shadow: 1.5px 1.5px 5px #767676;
+        text-align: center;
+        display: none;
+    }
+    #noti2:checked ~ .notificacion{
+        display: block;
+    }
+
+    
+    .carrito-deb{
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 90px;
+    }
+    .opcs_pantallas, header p{
+        display: none;
+    }
+    
+    .phone-contac{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 4%;
+        top: 20%;
+    }
+    .opc_pantalla1{
+        display: block;
+        
+    }
+    .phone-contac b{
+        font-family: sans-serif;
+        font-size: 22px;
+        color: #fff;
+    }
+    .redes_sociales{
+        position: absolute;
+        top: 50%;
+        right: 8%;
+    }
+    .container_debajo_header{
+        display: flex;
+        position: relative;
+        background: #75A933;
+        height: 53px;
+        width: 100%;
+        align-items: center;
+        position: sticky;
+        top: 150px;
+        z-index: 90;
+    }
+    .container_debajo_header nav{
+        display: flex;
+        position: absolute;
+        right: 3%;
+    }
+    .cerrar-menu, .abrir-menu{
+        display: block;
+    }
+    .abrir-menu{
+        position: absolute;
+        left: 4%;
+        top: 91%;
+    }
+    .menu{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #75A933;
+        right: -100%;
+        top: 0;
+        padding: 100px 0px;
+        z-index: 1000;
+        transition: 0.8s;
+        text-align: center;
+    }
+    .menu a{
+        text-align: center;
+        display: block;
+        padding: 20px;
+        color: #fff;
+        font-family: sans-serif;
+    }
+    .menu a:hover{
+        color: #dcdcdc;
+    }
+    .cerrar-menu{
+        position: absolute;
+        top: 30px;
+        right: 60px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+}
+@media (max-width: 480px) {
+    .container_debajo_header .user2, .container_debajo_header .noti2, .container_debajo_header .carrito-deb{
+        display: none;
+    }
+    .ini-regi{
+        position: absolute;
+        top: 140px;
+    }
+    .carrito-deb{
+        margin-left: 0;
+    }
+    .opc-tel{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #011820;
+    }
+    .opcs-tel{
+        height: 290px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .iniciar_sesion2{
+        display: block;
+        background: #0A988F;
+        padding: 13px 50px;
+        border-radius: 10px;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 18px;
+        position: absolute;
+        top: 10px;
+        right: 22px;
+    }
+    .iniciar_sesion1{
+        display: none;
+    }
+    .arriba-header{
+        display: flex;
+        height: 30px;
+        background: #4b4b4b;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .PHONE{
+        height: 18px;
+    }
+    
+    .arriba-header b{
+        color: #fff;
+    }
+    .phone-contac{
+        display: none;
+    }
+    .soc{
+        margin: 0 0.5%;
+    }
+    .redes_sociales{
+        display: none;
+    }
+    .sociale{
+        width: 18px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+    }
+    .redes_sociale{
+        display: flex;
+    }
+    .container_debajo_header{
+        position: sticky;
+        top: 150px;
+    }
+}
