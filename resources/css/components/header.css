@@ -1,8 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
+.todo_fijado{
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
-
 header{
     position: relative;
     background-color: #088199;
@@ -23,6 +23,7 @@ header p{
     position: absolute;
     right: 3.5%;
     top: 1%;
+    color: white;
 }
 .redes_sociales{
     position: absolute;
@@ -81,36 +82,21 @@ a {
 .container_debajo_header{
     display: none;
 }
+
+
 .phone-contac{
     display: none;
 }
+
+
+
+
 .arriba-header{
     display: none;
 }
 
-#------------------------------------------------------
 
-footer{
-    min-height: 400px;
-    background-color: #011820;
-    color: #fff;
-    font-family: sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.qr{
-    margin-top: 5px;
-}
-.contenido{
-    width: 450px;
-    height: 350px;
-    align-self: center;
-    align-content: center;
-    text-align: center;
-    border-right: 3px solid #fff ;
-    border-left: 3px solid #fff ;
-}
+
 .ini-regis{
     width: 250px;
     height: 150px;
@@ -189,59 +175,27 @@ footer{
     font-size: 20px;
     box-shadow: 1.5px 1.5px 5px #767676;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .iniciar_sesion2, .opcs-tel{
     display: none;
 }
+@keyframes slide{
+    0%, 20%{margin-left: 0%;}
+
+    25%, 45%{margin-left: -100%;}
+
+    50%, 70%{margin-left: -200%;}
+}
+
+
 @media (max-width: 1085px) {
     .opc_pantalla{
         font-size: 17px;
+    }
+    .compra{
+        position: absolute;
+        top: 400px;
+        position: fixed;
+        z-index:1000;
     }
 }
 @media (max-width: 1209px) {
@@ -250,7 +204,6 @@ footer{
         width: 70%;
     }
 }
-
 @media (max-width: 1000px) {
     .ini-regi{
         width: 250px;
@@ -327,8 +280,19 @@ footer{
     #noti2:checked ~ .notificacion{
         display: block;
     }
-
-    
+    .contenido{
+        border-right: none;
+        border-left: none;
+    }
+    .qr{
+        width: 250px;
+    }
+    .compra, .cifras{
+        display: none;
+    }
+    .nues img{
+        width: 40%;
+    }
     .carrito-deb{
         height: 40px;
         margin-top: 5px;
@@ -337,7 +301,10 @@ footer{
     .opcs_pantallas, header p{
         display: none;
     }
-    
+    .compra{
+        position: absolute;
+        top: 40%;
+    }
     .phone-contac{
         display: flex;
         align-items: center;
@@ -388,7 +355,7 @@ footer{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #75A933;
+        background: #76a933;
         right: -100%;
         top: 0;
         padding: 100px 0px;
@@ -415,6 +382,8 @@ footer{
         right: 0;
     }
 }
+
+
 @media (max-width: 480px) {
     .container_debajo_header .user2, .container_debajo_header .noti2, .container_debajo_header .carrito-deb{
         display: none;
@@ -470,22 +439,25 @@ footer{
     .PHONE{
         height: 18px;
     }
-    
     .arriba-header b{
         color: #fff;
     }
+    
     .phone-contac{
         display: none;
     }
     .soc{
         margin: 0 0.5%;
     }
+
     .redes_sociales{
         display: none;
     }
+    
     .sociale{
         width: 18px;
     }
+
     header{
         display: flex;
         justify-content: center;
@@ -498,4 +470,32 @@ footer{
         position: sticky;
         top: 150px;
     }
+    .arriba-header .soc{
+        display: none;
+    }
+
+
+    .opcs-tel .opc-tel:nth-child(1){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .opc-tel img{
+        width: 60px;
+        height: 53px;
+    }
+    .opc-tel:nth-child(4) img{
+        width: 60px;
+        height: 60px;
+    }
+    .opcs-tel .sociale{
+        width: 30px;
+        height: 30px;
+    }
+    .opc-tel{
+        box-shadow: 1.5px 1.5px 5px #3d3d3d;
+    }
 }
+
+
+

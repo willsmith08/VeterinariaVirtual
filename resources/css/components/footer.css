@@ -1,0 +1,52 @@
+
+footer{
+    min-height: 400px;
+    background-color: #011820;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.qr{
+    margin-top: 5px;
+}
+.contenido{
+    width: 450px;
+    height: 350px;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    border-right: 3px solid #fff ;
+    border-left: 3px solid #fff ;
+}
+
+.contenido:nth-child(1){
+    border: none;
+}
+
+.contenido:nth-child(3){
+    border: none;
+}
+
+@media (max-width: 1355px) {
+    .contenido{
+        border-right: none;
+        border-left: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    .qr{
+        width: 250px;
+    }
+    
+    .nues img{
+        width: 40%;
+    }
+    
+    
+    
+    
+}

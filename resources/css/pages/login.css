@@ -1,0 +1,40 @@
+
+.contenedor{
+    background: #9d9d9d6c;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.contenido{
+    background-image: url(/public/imgs/backgroud_login.png);
+    background-position: center;
+    width: 390px;
+    height: 380px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+button{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: #fff;
+}
+.olv{
+    margin-bottom: 20px;
+}
+.li{
+    margin-top: 10px;
+}
