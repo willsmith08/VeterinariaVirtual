@@ -12,9 +12,16 @@
                 <a href="/"><img src="imgs/LOGO.png" alt=""></a>
             </div>
             <h1>¡Bienvenido de nuevo!</h1>
-            <form action="">
-                <input type="text" placeholder="Usuario" id="usuario">
-                <input type="password" placeholder="Contraseña" id="contraseña">
+            <form action="POST">
+                @csrf
+                <input type="text" placeholder="Usuario" id="usuario" name="gmail">
+                @error('gmail')
+                    <p>{{ $message }}</p>
+                @enderror
+                <input type="password" placeholder="Contraseña" id="contraseña" name="contrasena">
+                @error('contrasena')
+                    <p>{{ $message }}</p>
+                @enderror
                 <button type="submit">Iniciar sesión</button>
             </form>
             <div class="li">

@@ -7,6 +7,12 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 
 /**
+ * database/factories de Laravel se almacenan las clases "fábrica" 
+ * (Model Factories) encargadas de definir cómo se crean datos falsos 
+ * (dummy data) para los modelos de la base de datos. Se utilizan principalmente 
+ * para generar registros automáticos durante el desarrollo y pruebas (testing), 
+ * definiendo atributos aleatorios usando la librería Faker
+ * 
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
 class UserFactory extends Factory
