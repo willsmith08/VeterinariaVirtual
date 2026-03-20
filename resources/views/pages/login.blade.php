@@ -11,17 +11,23 @@
             <div class="lgo">
                 <a href="/"><img src="imgs/LOGO.png" alt=""></a>
             </div>
-            <h1>¡Bienvenido de nuevo!</h1>
+            <h2 class="txtWelcome">¡BIENVENIDO DE NUEVO!</h2>
             <form action="/login" method="POST">
                 @csrf
-                <input type="text" placeholder="Usuario" id="usuario" name="gmail">
-                @error('gmail')
-                    <p>{{ $message }}</p>
+                
+
+                <div class="containerInputs">
+                    <input type="text" placeholder="Usuario" id="usuario" name="gmail">
+                
+                    <input type="password" placeholder="Contraseña" id="contraseña" name="contrasena">
+                </div>
+
+                @error('user')
+                    <dialog open>
+                        <p style="width: 100%;">{{ $message }}</p>
+                    </dialog>
                 @enderror
-                <input type="password" placeholder="Contraseña" id="contraseña" name="contrasena">
-                @error('contrasena')
-                    <p>{{ $message }}</p>
-                @enderror
+
                 <button type="submit">Iniciar sesión</button>
             </form>
             <div class="li">

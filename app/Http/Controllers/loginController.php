@@ -31,7 +31,7 @@ class loginController extends Controller
 
         return back()->withErrors([
             'user' => 'Credenciales incorrectas'
-        ])->whitInput();
+        ]);
 
     }
 
