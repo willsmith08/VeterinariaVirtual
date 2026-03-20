@@ -12,7 +12,7 @@
                 <a href="/"><img src="imgs/LOGO.png" alt=""></a>
             </div>
             <h1>¡Bienvenido de nuevo!</h1>
-            <form action="POST">
+            <form action="/login" method="POST">
                 @csrf
                 <input type="text" placeholder="Usuario" id="usuario" name="gmail">
                 @error('gmail')
