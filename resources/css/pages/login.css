@@ -1,6 +1,6 @@
 
 .contenedor{
-    background: #9d9d9d6c;
+    background: #eaeaea6c;
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -9,32 +9,46 @@
 .contenido{
     background-image: url(/public/imgs/backgroud_login.png);
     background-position: center;
-    width: 390px;
-    height: 380px;
+    width: 500px;
+    height: 500px;
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
     color: #fff;
-    display: block;
 }
+.txtWelcome{
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form{
+    text-align: center;
+    display: contents;
+}
+.containerInputs{
+    display: grid;
+    gap: 15px;
+}
+
 input{
-    height: 30px;
+    width: 300PX;
+    height: 35px;
     border-radius: 5px;
     border: none;
-    margin-bottom: 20px;
 }
 button{
-    width: 150px;
+    background-color: #0600006c;
+    color: #fff;
+    width: 330PX;
     height: 35px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a{
-    color: #fff;
-}
-.olv{
-    margin-bottom: 20px;
-}
-.li{
-    margin-top: 10px;
+    color: #ffffff;
 }
